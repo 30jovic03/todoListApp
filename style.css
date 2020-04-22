@@ -1,0 +1,11 @@
+
+
+
+#viewList > .checked > .listText {
+  color: #adb5bd;
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+}
