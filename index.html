@@ -8,15 +8,17 @@
   <title>ToDo List</title>
 </head>
 <body>
-  <h1>ToDo List</h1>
+  <div id="container">
+    <h1>ToDo List</h1>
 
-  <div>
-    <button onclick="itemList.toggleAll()">Toggle All</button>
-    <input id="newInput" type="text">
-    <button onclick="itemList.addItem()">Add</button>
+    <div>
+      <button class="toggle" onclick="itemList.toggleAll()">&#8711</button>
+      <input id="newInput" type="text">
+      <button onclick="itemList.addItem()">Add</button>
+    </div>
+
+    <ul id="viewList"></ul>
   </div>
-
-  <ul id="viewList"></ul>
-  <div id="filter"></div>
+  <span>mavis 2020</span>
 </body>
 </html>

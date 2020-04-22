@@ -94,7 +94,7 @@ var view = {
   },
   createDeleteButton: () => {
     var deleteButton = document.createElement('button');
-    deleteButton.textContent = '✖';
+    deleteButton.textContent = 'Delete';
     deleteButton.className = 'deleteButton';
     return deleteButton;
   },
@@ -119,6 +119,7 @@ var view = {
       // Check if elementClicked is a edit button.
       if (elementClicked.innerHTML === 'Edit') {
         elementClicked.parentNode.querySelector('input[type=text]').removeAttribute('disabled');
+        elementClicked.parentNode.querySelector('input[type=text]').setAttribute('style', 'text-decoration: none;');
         elementClicked.parentNode.querySelector('input[type=text]').focus();
         elementClicked.innerHTML = 'Done';
         } else if (elementClicked.innerHTML === 'Done') {

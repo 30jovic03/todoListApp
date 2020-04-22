@@ -1,11 +1,58 @@
 
-
-
-#viewList > .checked > .listText {
-  color: #adb5bd;
-  text-decoration: line-through;
+* {
+  margin: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: blue;
 }
-
+body {
+  background-color: rgb(0, 214, 252);
+}
+#container {
+  padding: 20px;
+  width: 700px;
+  position: relative;
+  top: 100px;
+  left: 400px;
+  background-color: rgb(166, 247, 60);
+}
+h1 {
+  font-size: 50px;
+  padding: 10px;
+}
+button {
+  height: 27px;
+  width: 70px;
+  margin: 5px;
+}
+#newInput {
+  width: 355px;
+}
+#viewList {
+  padding: 33px;
+}
 li {
   list-style: none;
+}
+li:nth-child(even) {background-color: #53fc93;}
+li:nth-child(odd) {background-color: #61ff61;}
+.listText {
+  background-color: inherit;
+  border: none;
+  width: 400px;
+  padding-left: 42px;
+}
+#viewList .listText:disabled {
+  color: blue;
+}
+#viewList > .checked > .listText {
+  color: #007900;
+  text-decoration: line-through;
+}
+span {
+  position: fixed;
+  bottom: 40px;
+  right: 200px;
+  font-size: 0.9em;
+  color: #444;
 }
