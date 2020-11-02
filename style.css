@@ -56,3 +56,33 @@ span {
   font-size: 0.9em;
   color: #444;
 }
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100px;
+  }
+  #container {
+    padding: 20px;
+    max-width: 93vw;
+    top: 20px;
+    left: 20px;
+  }
+  h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  button {
+    height: 27px;
+    margin: 5px;
+  }
+  #newInput {
+    max-width: 350px;
+  }
+  #viewList {
+    padding: 20px;
+  }
+  .listText {
+    width: 300px;
+    padding-left: 20px;
+  }
+}
