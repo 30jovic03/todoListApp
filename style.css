@@ -58,6 +58,9 @@ span {
 }
 
 @media only screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
   body {
     width: 100px;
   }
@@ -72,17 +75,18 @@ span {
     padding: 10px;
   }
   button {
-    height: 27px;
-    margin: 5px;
+    width: 55px;
+    height: 20px;
+    margin: 4px;
   }
   #newInput {
-    max-width: 350px;
+    max-width: 240px;
   }
   #viewList {
     padding: 20px;
   }
   .listText {
-    width: 300px;
-    padding-left: 20px;
+    width: 210px;
+    padding-left: 10px;
   }
 }
