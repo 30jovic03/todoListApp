@@ -9,7 +9,6 @@ var itemList = {
       });
       newInput.value= '';
       view.displayItems();
-      view.displayFilter();
     }
   },
   changeItem: function(position, newText) {
@@ -19,13 +18,11 @@ var itemList = {
   deleteItem: function(position) {
     this.items.splice(position, 1);
     view.displayItems();
-    view.displayFilter();
   },
   toggleItem: function(position) {
     var item = this.items[position];
     item.completed = !item.completed;
     view.displayItems();
-    view.displayFilter();
   },
   toggleAll: function () {
     var totalItems = this.items.length;
@@ -45,7 +42,6 @@ var itemList = {
       }
     });
     view.displayItems();
-    view.displayFilter();
   }
 };
 
